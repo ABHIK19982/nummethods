@@ -10,6 +10,7 @@ public class Differentiation extends MathOperations {
         this.interval = 0.0001;
     }
     public double derivative(int order,double x){
+        if(order ==0) return x;
         char[] coeffs = Integer.toString((int) Math.pow(11, order)).toCharArray();
         double d = 0;
         if(order == 1){
